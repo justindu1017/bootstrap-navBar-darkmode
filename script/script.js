@@ -5,6 +5,7 @@ const closeGrayOut = () => {
   const coverer = document.querySelector("#coverer");
   if (coverer.classList.contains("grayOut")) {
     coverer.classList.toggle("grayOut");
+    coverer.classList.toggle("pe-none");
   }
 };
 nightMode = () => {
