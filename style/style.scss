@@ -1,12 +1,21 @@
 $scrollBarColor: #a4a3a3;
+$haveRead: #d3d9d1;
 
 $theme-colors: (
   "navBar": #fff,
+  "haveRead": $haveRead,
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 $grayOutBGColor: rgb(22, 22, 22);
+
+@mixin expandNoWrapLine {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 
 @mixin grayOutMixin {
   transition-property: opacity;
@@ -17,6 +26,10 @@ $grayOutBGColor: rgb(22, 22, 22);
 
 * {
   font-size: 20px;
+}
+
+.span {
+  white-space: pre;
 }
 
 a,
@@ -41,6 +54,10 @@ body::-webkit-scrollbar-thumb {
     transform: rotate(0deg);
     transition-duration: 0.5s;
   }
+}
+
+.expandNoWrapLine {
+  @include expandNoWrapLine;
 }
 
 .grayOut {
@@ -102,9 +119,11 @@ body::-webkit-scrollbar-thumb {
   $secondary: #392b3a;
   $success: #1f4422;
   $dark: #000;
+  $warning: #cba203;
 
   $theme-colors: (
     "primary": $primary,
+    "warning": $warning,
     "secondary": $secondary,
     "success": $success,
     "danger": $danger,
@@ -112,6 +131,7 @@ body::-webkit-scrollbar-thumb {
     "dark": $dark,
     "light": #aaa,
     "navBar": $primary,
+    "haveRead": $primary,
   );
 
   /* redefine theme color variables */

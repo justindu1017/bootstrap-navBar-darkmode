@@ -17,7 +17,6 @@
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
     ></script>
-
     <link rel="stylesheet" href="style/style.css" />
     <title>navBar</title>
   </head>
@@ -27,148 +26,309 @@
       class="position-absolute position-fixed w-100 h-100 pe-none opacity-0"
       onmousedown="closeGrayOut()"
     ></div>
-    <nav
-      class="
-        mainNavBar
-        shadow
-        h-100
-        bg-navBar
-        position-fixed
-        ps-1
-        user-select-none
-      "
-      onmouseenter="grayOutToggle()"
-      onmouseleave="grayOutToggle()"
-    >
-      <ul
-        class="h-100 d-flex flex-row flex-wrap align-items-center list-unstyled"
+
+    <div>
+      <nav
+        class="
+          mainNavBar
+          shadow
+          h-100
+          bg-navBar
+          position-fixed
+          ps-1
+          user-select-none
+        "
+        onmouseenter="grayOutToggle()"
+        onmouseleave="grayOutToggle()"
       >
-        <li class="d-flex w-100 logo">
-          <a class="d-flex align-items-center" href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="currentColor"
-              class="bi bi-justify"
-              viewBox="0 0 16 16"
+        <ul
+          class="
+            h-100
+            d-flex
+            justify-content-around
+            flex-column flex-wrap
+            align-items-center
+            list-unstyled
+          "
+        >
+          <li class="d-flex w-100 logo">
+            <a class="d-flex align-items-center" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-justify"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <span class="ms-2 fs-4">Mail Center</span>
+            </a>
+          </li>
+          <li class="d-flex w-100">
+            <div class="d-flex flex-wrap align-items-center">
+              <ul class="list-unstyled">
+                <li class="d-flex option mb-3">
+                  <a
+                    class="d-flex align-items-center"
+                    href="https://www.google.com"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="43"
+                      height="43"
+                      fill="currentColor"
+                      class="bi bi-pen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"
+                      />
+                    </svg>
+                    <span class="ms-3 fs-5 aText">write</span>
+                  </a>
+                </li>
+                <li class="d-flex option mb-3">
+                  <a
+                    class="d-flex align-items-center"
+                    href="https://www.google.com"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-inbox"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.40a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z"
+                      />
+                    </svg>
+                    <span class="ms-3 fs-5 aText">inbox</span>
+                  </a>
+                </li>
+                <li class="d-flex option mb-3">
+                  <a
+                    class="d-flex align-items-center"
+                    href="https://www.google.com"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-up-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                      />
+                    </svg>
+                    <span class="ms-3 fs-5 aText">sent</span>
+                  </a>
+                </li>
+                <li class="d-flex option mb-3">
+                  <a
+                    class="d-flex align-items-center"
+                    href="https://www.google.com"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      fill="currentColor"
+                      class="bi bi-trash"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+                      />
+                    </svg>
+                    <span class="ms-3 fs-5 aText">trash</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="d-flex w-100">
+            <a
+              id="nightMode"
+              class="d-flex align-items-end"
+              onclick="nightMode()"
             >
-              <path
-                fill-rule="evenodd"
-                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-
-            <span class="ms-2 fs-4">Mail Center</span>
-          </a>
-        </li>
-
-        <li class="d-flex w-100">
-          <div class="d-flex flex-wrap align-item-center">
-            <ul class="list-unstyled">
-              <li class="d-flex option mb-3">
-                <a
-                  class="d-flex align-items-center"
-                  href="https://www.google.com"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="43"
-                    height="43"
-                    fill="currentColor"
-                    class="bi bi-pen"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"
-                    />
-                  </svg>
-
-                  <span class="ms-3 fs-5 aText">write</span>
-                </a>
-              </li>
-              <li class="d-flex option mb-3">
-                <a
-                  class="d-flex align-items-center"
-                  href="https://www.google.com"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    fill="currentColor"
-                    class="bi bi-inbox"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.40a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z"
-                    />
-                  </svg>
-
-                  <span class="ms-3 fs-5 aText">inbox</span>
-                </a>
-              </li>
-              <li class="d-flex option mb-3">
-                <a
-                  class="d-flex align-items-center"
-                  href="https://www.google.com"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    fill="currentColor"
-                    class="bi bi-trash"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
-                    />
-                  </svg>
-
-                  <span class="ms-3 fs-5 aText">trash</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="d-flex w-100">
-          <a
-            id="nightMode"
-            class="d-flex align-items-end"
-            onclick="nightMode()"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="45"
+                fill="currentColor"
+                class="bi bi-moon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+              </svg>
+              <span class="ms-2 fs-5 aText">dark mode</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <main class="pt-3">
+        <div class="ms-5 px-3">
+          <div
+            class="
+              d-flex
+              flex-column
+              rounded-3
+              bg-warning
+              shadow-sm
+              mb-2
+              mx-2
+              p-3
+              px-4
+            "
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="45"
-              height="45"
-              fill="currentColor"
-              class="bi bi-moon"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-              />
-            </svg>
+            <div class="d-flex align-items-center">
+              <h3 class="expandNoWrapLine w-75">This is Title</h3>
 
-            <span class="ms-2 fs-5 aText">dark mode</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+              <div class="d-flex w-25 ms-3 ps-3">
+                <span>from: </span>
+                <div>Justin DuDuDu</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="expandNoWrapLine w-75">
+                Shakira, who is in her early forties, corralled her fam ily: her
+                husband, an opium merchant, who was fast asleep, having
+                succumbed to the temptations of his product, and her eight
+                children, including her oldest, twenty-year-old Nilofar—as old
+                as the war itself—whom Shakira called her “deputy,” because she
+                helped care for the younger ones. The family crossed an old
+                footbridge spanning a canal, then snaked their way through reeds
+                and irregular plots of beans and onions, past dark and vacant
+                houses. Their neighbors had been warned, too, and, except for
+                wandering chickens and orphaned cattle, the village was empty.
+                Shakira’s family walked for hours under a blazing sun. She
+                started to feel the rattle of distant thuds, and saw people
+                streaming from riverside villages: men bending low beneath
+                bundles stuffed with all that they could not bear to leave
+                behind, women walking as quickly as their burqas allowed. The
+                pounding of artillery filled the air, announcing the start of a
+                Taliban assault on an Afghan Army outpost. Shakira balanced her
+                youngest child, a two-year-old daughter, on her hip as the sky
+                flashed and thundered. By nightfall, they had come upon the
+                valley’s central market. The corrugated-iron storefronts had
+                largely been destroyed during the war. Shakira found a one-room
+                shop with an intact roof, and her family settled in for the
+                night. For the children, she produced a set of cloth dolls—one
+                of a number of distractions that she’d cultivated during the
+                years of fleeing battle. As she held the figures in the light of
+                a match, the earth shook. Around dawn, Shakira stepped outside,
+                and saw that a few dozen families had taken shelter in the
+                abandoned market. It had once been the most thriving bazaar in
+                northern Helmand, with shopkeepers weighing saffron and cumin on
+                scales, carts loaded with women’s gowns, and storefronts
+                dedicated to selling opium. Now stray pillars jutted upward, and
+                the air smelled of decaying animal remains and burning plastic.
+                In the distance, the earth suddenly exploded in fountains of
+                dirt. Helicopters from the Afghan Army buzzed overhead, and the
+                families hid behind the shops, considering their next move.
+                There was fighting along the stone ramparts to the north and the
+                riverbank to the west. To the east was red-sand desert as far as
+                Shakira could see. The only option was to head south, toward the
+                leafy city of Lashkar Gah, which remained under the control of
+                the Afghan government.
+              </div>
+              <div class="w-25 ms-3 ps-3">2099-12-31</div>
+            </div>
+          </div>
 
-    <main class="pt-3">
-      <div class="ms-5 px-3">
-        <div class="d-flex rounded-3 bg-warning shadow-sm mb-2 mx-2 p-2">
-          <h3 class="">This is Title</h3>
+          <div
+            class="
+              d-flex
+              flex-column
+              rounded-3
+              bg-haveRead
+              shadow-sm
+              mb-2
+              mx-2
+              p-3
+              px-4
+            "
+          >
+            <div class="d-flex align-items-center">
+              <h3 class="expandNoWrapLine w-75">This is Title</h3>
+
+              <div class="d-flex w-25 ms-3 ps-3">
+                <span>from: </span>
+                <div>Justin DuDuDu</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="expandNoWrapLine w-75">
+                Shakira, who is in her early forties, corralled her fam ily: her
+                husband, an opium merchant, who was fast asleep, having
+                succumbed to the temptations of his product, and her eight
+                children, including her oldest, twenty-year-old Nilofar—as old
+                as the war itself—whom Shakira called her “deputy,” because she
+                helped care for the younger ones. The family crossed an old
+                footbridge spanning a canal, then snaked their way through reeds
+                and irregular plots of beans and onions, past dark and vacant
+                houses. Their neighbors had been warned, too, and, except for
+                wandering chickens and orphaned cattle, the village was empty.
+                Shakira’s family walked for hours under a blazing sun. She
+                started to feel the rattle of distant thuds, and saw people
+                streaming from riverside villages: men bending low beneath
+                bundles stuffed with all that they could not bear to leave
+                behind, women walking as quickly as their burqas allowed. The
+                pounding of artillery filled the air, announcing the start of a
+                Taliban assault on an Afghan Army outpost. Shakira balanced her
+                youngest child, a two-year-old daughter, on her hip as the sky
+                flashed and thundered. By nightfall, they had come upon the
+                valley’s central market. The corrugated-iron storefronts had
+                largely been destroyed during the war. Shakira found a one-room
+                shop with an intact roof, and her family settled in for the
+                night. For the children, she produced a set of cloth dolls—one
+                of a number of distractions that she’d cultivated during the
+                years of fleeing battle. As she held the figures in the light of
+                a match, the earth shook. Around dawn, Shakira stepped outside,
+                and saw that a few dozen families had taken shelter in the
+                abandoned market. It had once been the most thriving bazaar in
+                northern Helmand, with shopkeepers weighing saffron and cumin on
+                scales, carts loaded with women’s gowns, and storefronts
+                dedicated to selling opium. Now stray pillars jutted upward, and
+                the air smelled of decaying animal remains and burning plastic.
+                In the distance, the earth suddenly exploded in fountains of
+                dirt. Helicopters from the Afghan Army buzzed overhead, and the
+                families hid behind the shops, considering their next move.
+                There was fighting along the stone ramparts to the north and the
+                riverbank to the west. To the east was red-sand desert as far as
+                Shakira could see. The only option was to head south, toward the
+                leafy city of Lashkar Gah, which remained under the control of
+                the Afghan government.
+              </div>
+              <div class="w-25 ms-3 ps-3">2099-12-31</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
   <script src="./script/script.js"></script>
 </html>
