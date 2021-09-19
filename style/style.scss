@@ -5,7 +5,7 @@ $scrollBarColor: #a4a3a3;
 $haveRead: #ecf3e8;
 $navBar: #fff;
 $grayOutBGColor: rgb(22, 22, 22);
-$deleted: rgb(193, 193, 193);
+$deleted: rgb(213, 221, 235);
 
 $custom-theme-colors: (
   "navBar": $navBar,
@@ -132,7 +132,9 @@ body::-webkit-scrollbar-thumb {
 
 .dark {
   $grayOutBGColor: rgb(22, 22, 22);
-  $enable-gradients: true;
+  $deleted: rgb(236, 87, 74);
+
+  // $enable-gradients: true;
 
   /* redefine theme colors for dark theme */
   $primary: #022a52;
@@ -152,6 +154,7 @@ body::-webkit-scrollbar-thumb {
     "light": #aaa,
     "navBar": $primary,
     "haveRead": $primary,
+    "deleted": $deleted,
   );
 
   /* redefine theme color variables */
