@@ -5,10 +5,12 @@ $scrollBarColor: #a4a3a3;
 $haveRead: #ecf3e8;
 $navBar: #fff;
 $grayOutBGColor: rgb(22, 22, 22);
+$deleted: rgb(193, 193, 193);
 
 $custom-theme-colors: (
   "navBar": $navBar,
   "haveRead": $haveRead,
+  "deleted": $deleted,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
@@ -40,6 +42,10 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 * {
   font-size: 20px;
+}
+
+textarea {
+  resize: none;
 }
 
 span {
