@@ -12321,11 +12321,11 @@ a:hover {
   text-decoration: inherit !important;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0.5rem;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: #a4a3a3;
   border-radius: 0.25rem;
 }
